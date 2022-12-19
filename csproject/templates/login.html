@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+        body{
+            font-family: 'Unbounded', cursive;
+            background-image: url(https://newdawnfilm.com/wp-content/uploads/2018/03/film-production.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+        #login{
+            color: cornflowerblue;
+            font-size:400%;
+            
+        }
+        #loginD{
+            margin-top: 20%;
+            margin-left: 20%;
+        }
+        input{
+            border-radius: 5px;
+            border-color: cornflowerblue;
+            background-color:cornsilk;
+            width: 225px;
+            height: 25px;
+            
+
+        }
+        form {
+            width: 550px;
+            height: 450px;
+            margin: auto;
+            position: relative;
+        }           
+    </style>
+    <title>Document</title>
+    
+</head>
+<body>
+    <center>
+        <button onclick="location.replace('/')">go back home</button>
+    <div id="loginD">
+    <h1 id="login"> Log-In </h1>
+    <form method="POST" action="/login">
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    </center>
+</body>
+</html>
